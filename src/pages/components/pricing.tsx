@@ -30,7 +30,8 @@ const PriceBox = ({ title, price, features }: { title: string; price: string; fe
 };
 
 const Pricing: React.FC = () => {
-  const isMobile = window.innerWidth <= 800; // Adjust the breakpoint as needed
+  const isBrowser = () => typeof window !== "undefined"
+  const isMobile = isBrowser() && window.innerWidth <= 800; // Adjust the breakpoint as needed
 
   return (
     <Layout id="pricing">

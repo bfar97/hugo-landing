@@ -8,6 +8,8 @@ import Header from "../../images/header.png"
 import Linkedin from '../../assets/icons/linkedin.svg'
 
 const Hero: React.FC = () => {
+  const isBrowser = () => typeof window !== "undefined"
+  const isMobile = isBrowser() && window.innerWidth <= 800;
   return (
     <Layout id='home'>
         <div className="z-10 w-full">
@@ -28,7 +30,7 @@ const Hero: React.FC = () => {
                 </li>
               </ul>
               <a className='self-end' href="https://linkedin.com/">
-                <Linkedin width={20} height={20} />
+                <Linkedin width={20} color={isMobile ? 'white': 'black' } height={20} />
               </a>
             </div>
           </nav>

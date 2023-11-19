@@ -4,7 +4,7 @@ import Layout from '../../components/layout';
 
 const Contact: React.FC = () => {
   return (
-    <Layout id="pricing">
+    <Layout id="contact">
       <div className="bg-gray-50 py-1 flex flex-col items-center justify-center h-full w-full">
         <h1 className="text-3xl font-bold mb-12">Contacta-me</h1>
 

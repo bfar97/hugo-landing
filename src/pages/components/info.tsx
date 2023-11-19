@@ -5,6 +5,14 @@ import React from 'react';
 import Layout from '../../components/layout';
 
 const Info: React.FC = () => {
+
+  const onClick = () => {
+    console.log('button clicked');
+    const targetElement = document.getElementById('contact'); // Replace with the actual ID of the element you want to scroll to
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Layout id='about'>
       <div className="bg-gray-50 py-12 h-full">
@@ -40,7 +48,7 @@ const Info: React.FC = () => {
           </div>
 
           <div className="text-center">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            <button onClick={onClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
               Contacta-me
             </button>
           </div>

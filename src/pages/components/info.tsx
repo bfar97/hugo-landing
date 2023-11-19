@@ -35,12 +35,6 @@ const Info: React.FC = () => {
 
           <div className="text-center mb-6">
             <p className="text-base sm:text-lg lg:text-xl text-gray-700">
-              But don't just take my word for it—here's what some of my clients have to say:
-            </p>
-          </div>
-
-          <div className="text-center mb-6">
-            <p className="text-base sm:text-lg lg:text-xl text-gray-700">
               I hold [Degrees and Certifications], and I am a proud member of the [Professional Organization], ensuring that you receive the best care.
             </p>
           </div>

@@ -45,7 +45,7 @@ const Pricing: React.FC = () => {
   return (
     <Layout id="pricing">
       <div className="flex flex-col items-center justify-evenly min-h-full">
-        <h1 className="text-5xl font-bold mt-8 mb-4">Preços</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mt-8 mb-4">Preços</h1>
         {isMobile ? (
           <Swiper
             autoplay={{

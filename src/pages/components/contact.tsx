@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
                 id="name"
                 name='name'
                 type="text"
-                placeholder="Your Name"
+                placeholder="O seu nome"
               />
             </div>
 
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                 id="email"
                 name='email'
                 type="email"
-                placeholder="Your Email"
+                placeholder="O seu email"
               />
             </div>
 
@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
                 id="message"
                 rows={5}
                 name='message'
-                placeholder="Your Message"
+                placeholder="A sua mensagem"
               ></textarea>
             </div>
 

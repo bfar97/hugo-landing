@@ -15,12 +15,7 @@ const Hero: React.FC = () => {
         <div className="z-10 w-full">
           <nav className="absolute p-4 z-100 w-full">
             <div className="flex mx-5 justify-between">
-              <div className="md:hidden space-y-1.5">
-                <div className="w-6 h-0.5 bg-gray-600"></div>
-                <div className="w-6 h-0.5 bg-gray-600"></div>
-                <div className="w-6 h-0.5 bg-gray-600"></div>
-              </div>
-              <ul className="hidden md:flex space-x-16 w-[50%] text-gray-600 font-medium">
+              <ul className="flex space-x-4 md:space-x-16 w-[80%] md:w-[50%] text-gray-600 font-medium">
                 <li>
                   <a href="#about">Sobre</a>
                 </li>
@@ -47,10 +42,10 @@ const Hero: React.FC = () => {
               <p className="font-mono font-medium italic text-gray-700 text-xl sm:text-2xl md:text-4xl lg:text-7xl pb-2">
                 Hugo Araújo
               </p>
-              <p className="font-mono text-gray-500 text-md sm:text-lg  md:text-3xl lg:text-3xl pb-2">
+              <p className="font-mono text-gray-600 text-md sm:text-lg  md:text-3xl lg:text-3xl pb-2">
                 Psicólogo
               </p>
-              <p className="font-mono text-gray-500 text-md sm:text-lg  md:text-2xl lg:text-2xl">
+              <p className="font-mono text-gray-600 text-md sm:text-lg  md:text-2xl lg:text-2xl">
                 Membro Efectivo OPP 25545
               </p>
             </div>

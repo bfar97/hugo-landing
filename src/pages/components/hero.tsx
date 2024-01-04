@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             </div>
           </nav>
           <div className='inline-flex flex-col md:flex-row w-full h-screen'>
-            <div className="flex mt-[50%] md:mt-0 justify-center md:w-1/2">
+            <div className="flex mt-[40%] md:mt-0 justify-center md:w-1/2">
               <img className="md:self-center self-start w-[45vh] h-[45vh] lg:w-[40vw] lg:h-[40vw]" src={Header} alt="header" />
             </div> 
             <div className="flex flex-col md:w-1/3 text-center items-center justify-start md:justify-center h-screen">

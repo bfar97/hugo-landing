@@ -11,18 +11,27 @@ import Layout from '../../components/layout';
 
 const PriceBox = ({ title, price, features }: { title: string; price: string; features: any }) => {
   return (
-    <div className="flex flex-col justify-between mb-6 w-full sm:w-80 lg:w-96 mx-auto bg-white shadow-lg rounded-lg overflow-hidden py-6">
-      <div className="px-6 py-4 flex flex-col items-center">
+    <div className="flex flex-col h-[30vh] justify-between mb-20 w-full sm:w-80 lg:w-96 mx-auto bg-white shadow-lg rounded-lg overflow-hidden py-6">
+      <div className="px-6 py-4 flex flex-col justify-center h-[40%] items-center">
         <div className="font-bold text-xl mb-2 text-center">{title}</div>
-        <div className="text-gray-600 text-center italic text-sm">{price}</div>
       </div>
-      <div className="px-6 pt-4 pb-2">
+      <div className="text-gray-600 text-center italic text-sm">{price}</div>
+      <div className="px-6 pt-4 pb-2 h=[50%]">
         <ul className="flex flex-col list-none list-inside">
-          {features.map((feature: string, index: React.Key | null | undefined) => (
-            <li key={index} className="text-gray-600 text-center py-2">
-              {feature}
-            </li>
-          ))}
+          {features.map((feature: string, index: React.Key | null | undefined) => {
+            if (feature === '.') return (
+              <li key={index} className="text-transparent text-center py-2">
+                {feature}
+              </li>
+            )
+            
+            return (
+              <li key={index} className="text-gray-600 text-center py-2">
+                {feature}
+              </li>
+            )
+          }
+          )}
         </ul>
       </div>
     </div>
@@ -36,7 +45,7 @@ const Pricing: React.FC = () => {
   return (
     <Layout id="pricing">
       <div className="flex flex-col items-center justify-evenly min-h-full">
-        <h1 className="text-3xl font-bold mt-8 mb-4">Our Pricing Plans</h1>
+        <h1 className="text-5xl font-bold mt-8 mb-4">Preços</h1>
         {isMobile ? (
           <Swiper
             autoplay={{
@@ -50,33 +59,31 @@ const Pricing: React.FC = () => {
             <SwiperSlide>
               <PriceBox
                 title="Consulta Psicológica Individual"
-                price="45€/mês"
+                price="45€"
                 features={[
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                  '50 minutos',
+                  'Presencial ou Online',
                 ]}
               />
             </SwiperSlide>
             <SwiperSlide>
               <PriceBox
                 title="Intervenção Individual de Orientação Vocacional e Exploração de Carreira "
-                price="45€/mês"
+                price="45€"
                 features={[
-                  'Nulla viverra hendrerit magna, hendrerit accumsan elit malesuada in.',
-                  'Nulla viverra hendrerit magna, hendrerit accumsan elit malesuada in.',
-                  'Nulla viverra hendrerit magna, hendrerit accumsan elit malesuada in.',
+                  '50 minutos',
+                  'Presencial ou Online',
                 ]}
               />
             </SwiperSlide>
             <SwiperSlide>
               <PriceBox
                 title="Intervenção em grupo de Orientação Vocacional e Exploração de Carreira"
-                price="sob consulta"
+                price="Sob consulta"
                 features={[
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                  'Presencial ou Online',
+                  '',
+                  // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 ]}
               />
             </SwiperSlide>
@@ -84,32 +91,30 @@ const Pricing: React.FC = () => {
         ) : (
           <div className="flex flex-row space-x-4">
             <PriceBox
-              title="Consulta Psicológica Individual"
-              price="45€/mês"
-              features={[
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-              ]}
-            />
+                title="Consulta Psicológica Individual"
+                price="45€"
+                features={[
+                  '50 minutos',
+                  'Presencial ou Online',
+                ]}
+              />
             <PriceBox
-              title="Intervenção Individual de Orientação Vocacional e Exploração de Carreira "
-              price="45€/mês"
-              features={[
-                'Nulla viverra hendrerit magna, hendrerit accumsan elit malesuada in.',
-                'Nulla viverra hendrerit magna, hendrerit accumsan elit malesuada in.',
-                'Nulla viverra hendrerit magna, hendrerit accumsan elit malesuada in.',
-              ]}
-            />
+                title="Intervenção Individual de Orientação Vocacional e Exploração de Carreira "
+                price="45€"
+                features={[
+                  '50 minutos',
+                  'Presencial ou Online',
+                ]}
+              />
             <PriceBox
-              title="Intervenção em grupo de Orientação Vocacional e Exploração de Carreira"
-              price="sob consulta"
-              features={[
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-              ]}
-            />
+                title="Intervenção em grupo de Orientação Vocacional e Exploração de Carreira"
+                price="Sob consulta"
+                features={[
+                  'Presencial ou Online',
+                  '.',
+                  // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                ]}
+              />
           </div>
         )}
         <div className="bg-red-100 h-1/4 w-full"></div>

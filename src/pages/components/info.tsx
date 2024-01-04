@@ -17,39 +17,33 @@ const Info: React.FC = () => {
     <Layout id='about'>
       <div className="bg-gray-50 py-12 h-full">
         <div className="flex flex-col items-center justify-around h-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800">
-              Meet Your Compassionate Psychologist
-            </h2>
-          </div>
-
-          <div className="text-center mb-6">
-            <p className="text-base sm:text-lg lg:text-xl text-gray-700">
-              Hello, I'm [Psychologist's Name], a licensed psychologist dedicated to helping individuals find their path to emotional well-being and personal growth.
+          <h2 className="text-2xl md:text-5xl font-bold mt-8 mb-4">Sobre Mim</h2>
+          <section className="flex flex-col self-center w-5/6 md:w-[40vw] mb-6">
+            <h2 className="text-lg md:text-3xl text-center font-semibold mb-4 md:mb-12">Actividade Profissional</h2>
+            <p className="text-gray-700 text-md md:text-lg mb-6">
+              <a href="https://catolicabs.porto.ucp.pt/pt-pt/career-and-development-office?change-language=1" className="text-blue-500 font-bold hover:underline">Católica Porto Business School</a> | Orientação Vocacional, Gestão de Carreira e Aprendizagem ao Longo da Vida
             </p>
-          </div>
-
-          <div className="text-center mb-6">
-            <p className="text-base sm:text-lg lg:text-xl text-gray-700">
-              With over [X years] of experience in the field, I specialize in [List of Specialties] and have helped countless clients navigate life's challenges. My approach to therapy is rooted in [Therapeutic Approach], which is known for its effectiveness in promoting lasting change and personal transformation.
+            <p className="text-gray-700 text-md md:text-lg mb-6">
+              <a href="https://consultorio-de-psicologia-do-porto.negocio.site/" className="text-blue-500 font-bold hover:underline">Consultório de Psicologia do Porto</a> | Psicologia Clínica e Orientação Vocacional
             </p>
-          </div>
-
-          <div className="text-center mb-6">
-            <p className="text-base sm:text-lg lg:text-xl text-gray-700">
-              I believe that therapy is a collaborative journey, and I am here to support you every step of the way. Your privacy and well-being are my top priorities, and I adhere to the highest ethical standards.
+            <p className="text-gray-700 text-md md:text-lg">
+              <a href="https://www.linkedin.com/company/consultoriodepsicologiaporto/about/" className="text-blue-500 font-bold hover:underline">Consultório de Psicologia Porto</a> | Psicologia Clínica e Orientação Vocacional
             </p>
-          </div>
-
-          <div className="text-center mb-6">
-            <p className="text-base sm:text-lg lg:text-xl text-gray-700">
-              I hold [Degrees and Certifications], and I am a proud member of the [Professional Organization], ensuring that you receive the best care.
+          </section>
+          <section className="flex flex-col self-center w-5/6 md:w-[40vw]">
+            <h2 className="text-2xl md:text-5xl text-center font-semibold mb-4 md:mb-12">Áreas de Intervenção e destinatários</h2>
+            <p className="text-gray-700 text-md md:text-lg mb-6">
+              <a className="text-gray-600 font-bold">Consulta Psicológica Individual </a> | Problemas psico-emocionais (ansiedade, depressão, stress, etc); Problemas relacionais; 
+              Problemas de comportamento; Transições de vida (reacção à mudança, dificuldades de adaptação, etc)
             </p>
-          </div>
-
+            <p className="text-gray-700 text-md md:text-lg mb-6">
+              <a className="text-gray-600 font-bold">Orientação Vocacional e Exploração de Carreira</a> | Apoio nas tomadas de decisão no percurso académico; 
+              Intervenção nas carreiras e apoio nas transições para o mercado de trabalho.
+            </p>
+          </section>
           <div className="text-center">
-            <button onClick={onClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-              Contacta-me
+            <button onClick={onClick} className="bg-[#AF0000] hover:bg-red-900 text-white font-bold py-2 px-4 rounded-full">
+              Marcações
             </button>
           </div>
         </div>

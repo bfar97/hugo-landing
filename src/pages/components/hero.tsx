@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
                 </li> */}
               </ul>
               <a className='self-end' href="https://linkedin.com/">
-                <Linkedin width={20} color={isMobile ? 'white': 'black' } height={20} />
+                <Linkedin width={20} color='black' height={20} />
               </a>
             </div>
           </nav>

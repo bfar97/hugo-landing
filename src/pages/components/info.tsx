@@ -17,7 +17,7 @@ const Info: React.FC = () => {
     <Layout id='about'>
       <div className="bg-gray-50 py-12 h-full">
         <div className="flex flex-col items-center justify-around h-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48">
-          <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-4">Sobre Mim</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-4">Sobre</h2>
           <section className="flex flex-col self-center w-5/6 md:w-[40vw] mb-6">
             <h2 className="text-md md:text-3xl text-center font-semibold mb-4 md:mb-12">Actividade Profissional</h2>
             <p className="text-gray-700 text-sm md:text-lg mb-6">

@@ -40,12 +40,12 @@ const PriceBox = ({ title, price, features }: { title: string; price: string; fe
 
 const Pricing: React.FC = () => {
   const isBrowser = () => typeof window !== "undefined"
-  const isMobile = isBrowser() && window.innerWidth <= 800; // Adjust the breakpoint as needed
+  const isMobile = isBrowser() && window.innerWidth <= 960; // Adjust the breakpoint as needed
 
   return (
     <Layout id="pricing">
       <div className="flex flex-col items-center justify-evenly min-h-full">
-        <h1 className="text-3xl md:text-5xl font-bold mt-8 mb-4">Preços</h1>
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mt-8 mb-4">Preços</h1>
         {isMobile ? (
           <Swiper
             autoplay={{

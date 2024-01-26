@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
   return (
     <Layout id="contact">
       <div className="bg-gray-50 py-1 flex flex-col items-center justify-center h-full w-full">
-        <h1 className="text-3xl md:text-5xl font-bold mb-12">Marcações</h1>
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-12">Marcações</h1>
 
         <div className="mb-6 w-3/4">
           <form className="max-w-md mx-auto" method='post' action='https://getform.io/f/06ca4527-de8f-43f9-8896-adae08661ca7'>
